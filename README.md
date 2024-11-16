@@ -1,6 +1,6 @@
 # 42Berlin_Libft
 
-<h1>First priject</h1>
+<h1>First project</h1>
 
 ---
 
