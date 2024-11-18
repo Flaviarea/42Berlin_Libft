@@ -1,21 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: frea <frea@student.42berlin.de>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/16 18:39:11 by frea              #+#    #+#             */
-/*   Updated: 2024/11/16 18:39:18 by frea             ###   ########.fr       */
+/*   Created: 2024/11/18 14:23:09 by frea              #+#    #+#             */
+/*   Updated: 2024/11/18 14:23:11 by frea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// checks for a digit (0 through 9)
+/*	ft_toupper:
+**	Converts a lowercase letter 'c' to its uppercase equivalent.
+**	If 'c' is not a lowercase letter, it is returned unchanged.
+*/
 
-int	ft_isdigit(int c)
+int	ft_tolower(int c)
 {
-	return (c >= '0' && c <= '9');
+	if (c >= 'a' && c <= 'z')
+		c -= 32;
+	return (c);
 }
-	
