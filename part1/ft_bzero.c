@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: frea <frea@student.42berlin.de>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/16 18:50:11 by frea              #+#    #+#             */
-/*   Updated: 2024/11/16 18:50:19 by frea             ###   ########.fr       */
+/*   Created: 2024/11/18 18:41:05 by frea              #+#    #+#             */
+/*   Updated: 2024/11/18 18:41:06 by frea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// checks whether c is a 7-bit unsigned char value that fits into the ASCII character set.//
+/*	ft_bzero:
+**	sets the first n bytes of the memory area pointed to by arr to zero.
+**	Typically used to zero out arrays or memory buffers.
+**	Cast the void pointer to a byte pointer
+*/
 
-int	isascii(int c)
+void	ft_bzero(void *s, size_t n)
 {
-	return (c >= 0 && c <= 127);
+	unsigned char	*ptr;
+
+	ptr = (unsigned char *)s;
+	while (n-- > 0)
+		*ptr++ = 0;
 }

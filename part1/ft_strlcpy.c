@@ -17,8 +17,8 @@
 **	Copies a string from 'src' to 'dest'. 
 **	It makes sure the copied string in dest ends with null terminator, so it’s always a properly ended string.
 **	It only copies up to 'sz' - 1 characters, leaving space for the \0 character at the end, making sure the destination buffer isn’t overrun.
-**	If 'sz' is 0, 'dest' is not modified and no null-terminator 
-**	is added. If the return value is >= 'dest', the output string has been truncated and add a \0.
+**	If 'sz' is 0, 'dest' is not modified and the function return the lenght of 'src'.
+**	If the return value is >= 'dest', the output string has been truncated and add a \0.
 **	Returns the total length of 'src'. 
 */
 
@@ -29,7 +29,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t sz)
 	i = 0;
 	if (sz <= 0)
 		return (ft_strlen(src));
-	while (src[i] && i < sz - 1)
+	while (src[i] && i < (sz - 1))
 	{
 		dest[i] = src[i];
 		i++;

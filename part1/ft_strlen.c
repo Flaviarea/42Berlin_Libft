@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: frea <frea@student.42berlin.de>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/16 18:50:11 by frea              #+#    #+#             */
-/*   Updated: 2024/11/16 18:50:19 by frea             ###   ########.fr       */
+/*   Created: 2024/11/20 15:32:46 by frea              #+#    #+#             */
+/*   Updated: 2024/11/20 15:32:47 by frea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// checks whether c is a 7-bit unsigned char value that fits into the ASCII character set.//
+/*	ft_strlen:
+**	find length of string using a size_t data type.
+**	Returns the length of the string pointed to by 'str', excluding the null terminator.
+*/
 
-int	isascii(int c)
+size_t	ft_strlen(const char *str)
 {
-	return (c >= 0 && c <= 127);
+	size_t	i;
+	
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }
