@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: frea <frea@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/22 18:18:04 by frea              #+#    #+#             */
-/*   Updated: 2024/12/03 19:26:36 by frea             ###   ########.fr       */
+/*   Created: 2024/11/20 15:32:46 by frea              #+#    #+#             */
+/*   Updated: 2024/12/03 16:13:23 by frea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*	ft_split: split a string into an array of words
-**	Input: A string s and a delimiter c.
-**  Output: An array of strings (each representing a word) 
-**  obtained by splitting s at occurrences of c.
-**  Allocates memory for the array of strings using malloc.
-**  Return the array with a NULL pointer.
+/*	ft_strlen:
+**	find length of string using a size_t data type.
+**	Returns the length of the string pointed to by 'str', 
+**	excluding the null terminator.
 */
 
-char **ft_split(char const *s, char c)
+size_t	ft_strlen(const char *str)
+{
+	size_t	i;
+	
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
+}
