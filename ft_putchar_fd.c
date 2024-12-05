@@ -19,3 +19,16 @@
 */
 
 void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}
+
+/*
+int main ()
+{
+    int fd = 1;
+    char character = 'A';
+    ft_putchar_fd(character, fd); // vale, pero para que??
+    return 0;
+}
+*/

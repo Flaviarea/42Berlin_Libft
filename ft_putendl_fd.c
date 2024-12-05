@@ -13,9 +13,13 @@
 #include "libft.h"
 
 /*	ft_putendl_fd:
-**	Outputs the string ’s’ to the given file descriptor followed by a newline.
+**	Outputs the string ’s’ to the given file descriptor 'fd' followed by a newline.
 **	s: The string to output. fd: The file descriptor on which to write.
 **	Does not return.
 */
 
 void	ft_putendl_fd(char *s, int fd)
+{
+	ft_putstr_fd(s, fd);
+	ft_putchar_fd('\n', fd);
+}
