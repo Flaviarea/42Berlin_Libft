@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: frea <frea@student.42berlin.de>            +#+  +:+       +#+        */
+/*   By: frea <frea@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 15:37:36 by frea              #+#    #+#             */
-/*   Updated: 2024/11/20 15:37:37 by frea             ###   ########.fr       */
+/*   Updated: 2024/12/09 19:13:28 by frea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@
 **	than the length of 'dest', 'dest' is not null-terminated.
 */
 
-size_t	strlcat(char *dest, const char *src, size_t sz)
+size_t	ft_strlcat(char *dest, const char *src, size_t sz)
 {
 	size_t	i;
 	size_t	j;

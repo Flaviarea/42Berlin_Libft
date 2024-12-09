@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: frea <frea@student.42berlin.de>            +#+  +:+       +#+        */
+/*   By: frea <frea@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 16:12:03 by frea              #+#    #+#             */
-/*   Updated: 2024/11/18 16:12:05 by frea             ###   ########.fr       */
+/*   Updated: 2024/12/09 19:01:15 by frea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 **	initializes all bytes to 0, and returns a pointer to the allocated memory.
 */
 
-void	*calloc(size_t elements, size_t size)
+void	*ft_calloc(size_t elements, size_t size)
 {
 	void	*ptr;
 

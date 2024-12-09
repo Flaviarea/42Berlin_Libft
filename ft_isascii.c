@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: frea <frea@student.42berlin.de>            +#+  +:+       +#+        */
+/*   By: frea <frea@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 18:50:11 by frea              #+#    #+#             */
-/*   Updated: 2024/11/16 18:50:19 by frea             ###   ########.fr       */
+/*   Updated: 2024/12/09 19:03:15 by frea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 **	that fits into the ASCII character set
 */
 
-int	isascii(int c)
+int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }
