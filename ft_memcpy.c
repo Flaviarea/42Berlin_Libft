@@ -6,7 +6,7 @@
 /*   By: frea <frea@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 15:36:54 by frea              #+#    #+#             */
-/*   Updated: 2024/12/09 19:29:34 by frea             ###   ########.fr       */
+/*   Updated: 2024/12/11 21:03:20 by frea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,15 +40,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t length)
 	}
 	return (dest);
 }
-/*
-ALTERNATIVE
-
-void *memcpyCustom(void *dest, const void *src, size_t n)
-{
-    char *dp = (char *)dest;
-    const char *sp = (char *)src;
-    while (n--)
-        *dp++ = *sp++;
-    return dest;
-}
-*/

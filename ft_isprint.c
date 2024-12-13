@@ -12,12 +12,15 @@
 
 #include "libft.h"
 
-/*	checks for any printable character including space.
+/*	ft_isprint:
+**	Checks if the character 'c' is a printable character.
 **	Printable characters are those with ASCII values 
 **	between 32 and 126, inclusive.
+**	Returns 1 if 'c' is printable, 0 otherwise.
 */
-
 int	ft_isprint(int c)
 {
-	return (c >= 32 && c <= 126);
+	if (c >= 32 && c <= 126)
+		return (1);
+	return (0);
 }

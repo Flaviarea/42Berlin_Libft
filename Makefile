@@ -1,6 +1,6 @@
 NAME = libft.a
-CC= gcc
-CCFLAGS= -Wall -Wextra -Werror 
+CC = cc
+CFLAGS = -Wall -Wextra -Werror 
 
 SRCS = ft_atoi.c \
 	ft_bzero.c \
@@ -39,28 +39,20 @@ SRCS = ft_atoi.c \
 	
 OBJECTS = $(SRCS:.c=.o)
 
+HEADER = libft.h
+
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	ar rc $(NAME) $(OBJECTS)
+	ar rcs $(NAME) $(OBJECTS)
 	
 %.o: %.c
-	$(CC) $(CCFLAGS) -c $< -o $@ // # $(CC): Compiler command (e.g., gcc).
-	# $(CFLAGS): Compiler flags (e.g., -Wall, -Wextra, -Werror).
-	# $<: The first prerequisite (the source file being compiled, e.g., ft_strlen.c).
-	# -c: Tells the compiler to compile the source into an object file (.o) without linking.
-	# -o: Specifies the output file (the .o file).
-	# $@: The target being built (the object file, e.g., ft_strlen.o).
+	$(CC) $(CCFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJECTS) // # rm -f: Deletes files forcefully and ignores errors if the files do not exist.
-	# $(OBJECTS): The list of object files (e.g., ft_strlen.o, ft_atoi.o).
-	
+	rm -f $(OBJECTS) 
 fclean: clean 
-	rm -f $(NAME) // # It removes not only the object files but also the compiled library (or executable) file.
-	# $(NAME): The target name of your compiled library (e.g., libft.a).
-	# By first running `clean`, it ensures all object files are removed as well.
-
+	rm -f $(NAME) 
 	
 re: fclean all
 	

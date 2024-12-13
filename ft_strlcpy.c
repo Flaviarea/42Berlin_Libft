@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: frea <frea@student.42berlin.de>            +#+  +:+       +#+        */
+/*   By: frea <frea@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 15:37:24 by frea              #+#    #+#             */
-/*   Updated: 2024/11/20 15:37:26 by frea             ###   ########.fr       */
+/*   Updated: 2024/12/11 21:00:50 by frea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,8 @@
 **	It makes sure the copied string in dest ends with 
 **	null terminator, so it’s always a properly ended string.
 **	It only copies up to 'sz' - 1 characters, leaving space for the \0 
-**	character at the end, making sure the destination buffer isn’t overrun.
-**	If 'sz' is 0, 'dest' is not modified and the function return the lenght of 'src'.
-**	If the return value is >= 'dest', the output string has been truncated and add a \0.
+**	If 'sz' is 0, 'dest' is not modified and the function return 
+**	the lenght of 'src'.
 **	Returns the total length of 'src'. 
 */
 

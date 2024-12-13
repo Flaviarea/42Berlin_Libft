@@ -6,7 +6,7 @@
 /*   By: frea <frea@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 18:17:52 by frea              #+#    #+#             */
-/*   Updated: 2024/12/03 19:26:31 by frea             ###   ########.fr       */
+/*   Updated: 2024/12/11 20:59:06 by frea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@
 **	Returns The trimmed string. NULL if the allocation fails.
 */
 
-char    *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-    char    *trim;
+	char	*trim;
 	int		i;
 	int		start;
 	int		end;
@@ -31,10 +31,10 @@ char    *ft_strtrim(char const *s1, char const *set)
 	if (!s1 || !set)
 		return (NULL);
 	start = 0;
-	while (s1[start] && ft_strchr(set, s1[start])) // Increment start to skip char we don't want
+	while (s1[start] && ft_strchr(set, s1[start]))
 		start++;
 	end = ft_strlen(s1);
-	while (end > start && ft_strchr(set, s1[end - 1])) // Like start but backwards, -1 because \0
+	while (end > start && ft_strchr(set, s1[end - 1]))
 		end--;
 	trim = (char *)malloc(sizeof(char) * (end - start + 1));
 	if (!trim)

@@ -6,7 +6,7 @@
 /*   By: frea <frea@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 15:39:43 by frea              #+#    #+#             */
-/*   Updated: 2024/12/03 16:13:08 by frea             ###   ########.fr       */
+/*   Updated: 2024/12/11 21:01:45 by frea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ char	*ft_strdup(const char *str)
 
 	dup_sz = ft_strlen(str) + 1;
 	dup_str = malloc(dup_sz);
-	if(!dup_str)
-		return(NULL)
-	ft_strcpy(dup_str, str);
+	if (!dup_str)
+		return (NULL);
+	ft_strlcpy (dup_str, str, dup_sz);
 	return (dup_str);
 }

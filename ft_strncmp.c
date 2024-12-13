@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: frea <frea@student.42berlin.de>            +#+  +:+       +#+        */
+/*   By: frea <frea@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 15:38:26 by frea              #+#    #+#             */
-/*   Updated: 2024/11/20 15:38:27 by frea             ###   ########.fr       */
+/*   Updated: 2024/12/12 14:34:49 by frea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 /*	ft_strncmp: compare two strings.
 **	Compares up to 'n' characters of the strings 's1' and 's2'.
-**	Returns 0 if they are equal up to 'n' characters, a negative value if 's1' is less than 's2',
+**	Returns 0 if they are equal up to 'n' characters, a negative 
+**	value if 's1' is less than 's2',
 **	or a positive value if 's1' is greater than 's2'.
 */
 int	ft_strncmp(const char *s1, const char *s2, size_t n)

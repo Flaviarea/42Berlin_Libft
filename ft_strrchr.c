@@ -20,16 +20,12 @@
 */
 char	*ft_strrchr(const char *str, int c)
 {
-	int	i;
+	int	str_len;
 
-	i = 0;
-	if (c == '\0')
-		return ((char *)&str[ft_strlen(str)]);
-	while (str[i] != '\0')
-	{
-		if (str[i] == (char)c)
-			return ((char *)&str[i]); 
-		i++;
-	}
+	str_len = ft_strlen(str);
+	while (str[str_len] != (char)c && str_len >= 0)
+		str_len--;
+	if ((char)c == str[str_len])
+		return ((char *)&str[str_len]);
 	return (NULL);
 }

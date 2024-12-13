@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: frea <frea@student.42berlin.de>            +#+  +:+       +#+        */
+/*   By: frea <frea@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 15:36:34 by frea              #+#    #+#             */
-/*   Updated: 2024/11/20 15:36:36 by frea             ###   ########.fr       */
+/*   Updated: 2024/12/11 21:03:05 by frea             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,6 @@ void	*ft_memset(void *s, int c, size_t length)
 	size_t			i;
 	unsigned char	*str;
 
-	if (s == NULL)
-		return (NULL);
 	str = (unsigned char *)s;
 	i = 0;
 	while (i < length)

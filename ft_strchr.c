@@ -22,16 +22,13 @@
 */
 char	*ft_strchr(const char *str, int c)
 {
-	int	i;
-
-	i = 0;
-	if (c == 0)
-		return ((char *)str + ft_strlen(str));
-	while (str[i])
+	while (*str)
 	{
-		if (str[i] == (const char)c)
-			return ((char *)str + i);
-		i++;
+		if (*str == (char) c)
+			return ((char *)str);
+		str++;
 	}
+	if (*str == (char) c)
+		return ((char *)str);
 	return (NULL);
 }
